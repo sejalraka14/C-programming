@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float marks[5], weights[5], total=0, sumWeights=0, avg;
+    int i;
+    clrscr();
+    printf("Enter marks of 5 subjects:\n");
+    for(i=0; i<5; i++)
+        scanf("%f", &marks[i]);
+    printf("Enter corresponding weights:\n");
+    for(i=0; i<5; i++)
+        scanf("%f", &weights[i]);
+    
+    for(i=0; i<5; i++)
+    {
+        total += marks[i] * weights[i];
+        sumWeights += weights[i];
+    }
+    if(sumWeights != 0)
+    {
+        avg = total / sumWeights;
+        printf("Weighted average = %.2f", avg);
+    }
+    else
+        printf("Sum of weights is zero!");
+    getch();
+}
