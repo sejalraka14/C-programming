@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int light;
+    clrscr();
+    printf("Enter light intensity (0-100): ");
+    scanf("%d",&light);
+    if(light<20)
+        printf("Brightness MAX");
+    else if(light<50)
+        printf("Brightness HIGH");
+    else if(light<80)
+        printf("Brightness MEDIUM");
+    else
+        printf("Brightness LOW");
+    getch();
+}
