@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int light, hour;
+    clrscr();
+    printf("Enter light intensity (0-100) and hour (0-23): ");
+    scanf("%d%d",&light,&hour);
+    if(hour>=18 || hour<6)
+    {
+        if(light<30)
+            printf("Turn ON Lights");
+        else
+            printf("Lights OFF");
+    }
+    else
+        printf("Daytime - Lights OFF");
+    getch();
+}
