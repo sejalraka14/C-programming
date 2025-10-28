@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int door, motion;
+    clrscr();
+    printf("Door (1=open,0=closed) and motion (1=yes,0=no): ");
+    scanf("%d%d",&door,&motion);
+    if(door==1 && motion==1)
+        printf("Security Alert!");
+    else
+        printf("All Safe");
+    getch();
+}
