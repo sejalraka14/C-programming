@@ -1,0 +1,16 @@
+#include <stdio.h>
+float avg(int a[], int b[], int n){
+    float sum = 0;
+    for(int i=0;i<n;i++)
+        sum += (a[i] + b[i]) / 2.0;
+    return sum / n;
+}
+int main(){
+    int s1[3], s2[3];
+    printf("Enter 3 readings of Sensor1: ");
+    for(int i=0;i<3;i++) scanf("%d",&s1[i]);
+    printf("Enter 3 readings of Sensor2: ");
+    for(int i=0;i<3;i++) scanf("%d",&s2[i]);
+    printf("Average of both sensors = %.2f", avg(s1, s2, 3));
+    return 0;
+}
