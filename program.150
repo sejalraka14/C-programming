@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int gas;
+    clrscr();
+    printf("Enter gas level (0-100): ");
+    scanf("%d",&gas);
+    if(gas>50)
+        printf("Gas leak Alert!");
+    else
+        printf("Gas level normal");
+    getch();
+}
