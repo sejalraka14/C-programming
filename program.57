@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float a, b, div;
+    clrscr();
+    printf("Enter two floats: ");
+    scanf("%f%f", &a, &b);
+    if(b != 0)
+    {
+        div = a / b;
+        printf("Division = %.2f", div);
+    }
+    else
+        printf("Division by zero not allowed!");
+    getch();
+}
