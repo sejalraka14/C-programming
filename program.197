@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int s[6], pos=0, neg=0, cp=0, cn=0;
+    printf("Enter 6 readings (can be negative): ");
+    for(int i=0;i<6;i++){
+        scanf("%d",&s[i]);
+        if(s[i]>=0){ pos+=s[i]; cp++; }
+        else { neg+=s[i]; cn++; }
+    }
+    printf("Avg Positive = %.2f\nAvg Negative = %.2f", 
+           cp? (float)pos/cp:0, cn? (float)neg/cn:0);
+    return 0;
+}
