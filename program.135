@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int cat1,cat2,cat3,total;
+    float p1,p2,p3;
+    clrscr();
+    printf("Enter values of 3 categories: ");
+    scanf("%d%d%d",&cat1,&cat2,&cat3);
+    total=cat1+cat2+cat3;
+    p1=(float)cat1/total*100;
+    p2=(float)cat2/total*100;
+    p3=(float)cat3/total*100;
+    printf("Percentage: Cat1=%.2f%%, Cat2=%.2f%%, Cat3=%.2f%%",p1,p2,p3);
+    getch();
+}
