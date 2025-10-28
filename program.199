@@ -1,0 +1,15 @@
+#include <stdio.h>
+float avgHigh(int a[], int n, int limit){
+    int sum=0,c=0;
+    for(int i=0;i<n;i++)
+        if(a[i]>limit){ sum+=a[i]; c++; }
+    return c? (float)sum/c : 0;
+}
+int main(){
+    int v[5],limit;
+    printf("Enter voltage limit: "); scanf("%d",&limit);
+    printf("Enter 5 readings: ");
+    for(int i=0;i<5;i++) scanf("%d",&v[i]);
+    printf("Average Above Limit = %.2fV", avgHigh(v,5,limit));
+    return 0;
+}
