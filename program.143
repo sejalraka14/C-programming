@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int moisture;
+    clrscr();
+    printf("Enter soil moisture (%): ");
+    scanf("%d",&moisture);
+    if(moisture < 30)
+        printf("Start watering");
+    else
+        printf("Soil is OK");
+    getch();
+}
