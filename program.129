@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float kg,g,pounds;
+    clrscr();
+    printf("Enter weight in Kg: ");
+    scanf("%f",&kg);
+    g=kg*1000;
+    pounds=kg/0.453592;
+    printf("Grams = %.2f, Pounds = %.2f",g,pounds);
+    getch();
+}
