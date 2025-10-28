@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float originalPrice, discountPrice, discountPercent;
+    clrscr();
+    printf("Enter original price: ");
+    scanf("%f", &originalPrice);
+    printf("Enter discount amount: ");
+    scanf("%f", &discountPrice);
+    if(originalPrice != 0)
+    {
+        discountPercent = (discountPrice / originalPrice) * 100;
+        printf("Discount Percentage = %.2f%%", discountPercent);
+    }
+    else
+        printf("Original price cannot be zero!");
+    getch();
+}
