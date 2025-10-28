@@ -1,0 +1,15 @@
+#include <stdio.h>
+float avgAbove(int a[],int n,int th){
+    int sum=0,c=0;
+    for(int i=0;i<n;i++)
+        if(a[i]>th){ sum+=a[i]; c++; }
+    return c? (float)sum/c : 0;
+}
+int main(){
+    int x[6],t;
+    printf("Enter threshold: "); scanf("%d",&t);
+    printf("Enter 6 readings: ");
+    for(int i=0;i<6;i++) scanf("%d",&x[i]);
+    printf("Average above %d = %.2f", t, avgAbove(x,6,t));
+    return 0;
+}
