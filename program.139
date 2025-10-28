@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int humidity;
+    clrscr();
+    printf("Enter humidity percentage: ");
+    scanf("%d",&humidity);
+    if(humidity < 40)
+        printf("Turn ON water pump");
+    else
+        printf("Humidity sufficient");
+    getch();
+}
