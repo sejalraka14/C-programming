@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+float avg(int a[], int n){
+    int sum=0;
+    for(int i=0;i<n;i++) sum+=a[i];
+    return (float)sum/n;
+}
+int main(){
+    int s[5];
+    printf("Enter 5 readings: ");
+    for(int i=0;i<5;i++) scanf("%d",&s[i]);
+    printf("Rounded Average = %.0f", round(avg(s,5)));
+    return 0;
+}
