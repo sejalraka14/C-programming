@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n, i;
+    float num, sum=0, avg;
+    clrscr();
+    printf("Enter how many numbers: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+    {
+        printf("Enter number %d: ", i);
+        scanf("%f", &num);
+        sum += num;
+    }
+    if(n != 0)
+    {
+        avg = sum / n;
+        printf("Average = %.2f", avg);
+    }
+    else
+        printf("No numbers entered!");
+    getch();
+}
