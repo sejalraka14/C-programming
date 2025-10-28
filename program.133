@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int km,m,cm,totalCm;
+    clrscr();
+    printf("Enter km, meters, cm: ");
+    scanf("%d%d%d",&km,&m,&cm);
+    totalCm=km*100000+m*100+cm;
+    printf("Total centimeters = %d",totalCm);
+    getch();
+}
