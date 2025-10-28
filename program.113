@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int min;
+    float hr;
+    clrscr();
+    printf("Enter minutes: ");
+    scanf("%d", &min);
+    hr = min / 60.0;
+    printf("Time in hours = %.2f", hr);
+    getch();
+}
