@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char str[100];
+    int i, len, upperCount=0;
+    float percent;
+    clrscr();
+    printf("Enter a string: ");
+    gets(str);
+    len = strlen(str);
+    for(i=0; i<len; i++)
+    {
+        if(str[i]>='A' && str[i]<='Z')
+            upperCount++;
+    }
+    if(len != 0)
+    {
+        percent = ((float)upperCount / len) * 100;
+        printf("Percentage of uppercase letters = %.2f%%", percent);
+    }
+    else
+        printf("Empty string!");
+    getch();
+}
