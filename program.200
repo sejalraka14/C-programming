@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int n,sum=0;
+    printf("Enter 5 readings one by one:\n");
+    for(int i=1;i<=5;i++){
+        int val;
+        scanf("%d",&val);
+        sum+=val;
+        printf("Current Average after %d readings = %.2f\n", i, (float)sum/i);
+    }
+    return 0;
+}
