@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int light;
+    clrscr();
+    printf("Enter light intensity (0-100): ");
+    scanf("%d",&light);
+    if(light < 50)
+        printf("LED ON");
+    else
+        printf("LED OFF");
+    getch();
+}
