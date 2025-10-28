@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float a, b, sum;
+    clrscr();
+    printf("Enter two floats: ");
+    scanf("%f%f", &a, &b);
+    sum = a + b;
+    printf("Sum = %.2f", sum);
+    getch();
+}
