@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int temp, humidity, wind;
+    clrscr();
+    printf("Enter temperature, humidity, wind speed: ");
+    scanf("%d%d%d",&temp,&humidity,&wind);
+    if(temp>35 && humidity>70 && wind>50)
+        printf("Extreme Weather Alert!");
+    else if(temp>35 || humidity>70)
+        printf("Moderate Alert");
+    else
+        printf("Weather Normal");
+    getch();
+}
