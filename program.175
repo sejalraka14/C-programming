@@ -1,0 +1,19 @@
+#include <stdio.h>
+float average(int arr[], int n) {
+    int sum = 0, count = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] >= 0) {
+            sum += arr[i];
+            count++;
+        }
+    }
+    return (count == 0) ? 0 : (float)sum / count;
+}
+int main() {
+    int data[5];
+    printf("Enter 5 readings (may include -1 for error): ");
+    for(int i = 0; i < 5; i++)
+        scanf("%d", &data[i]);
+    printf("Average of valid readings = %.2f", average(data, 5));
+    return 0;
+}
