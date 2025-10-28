@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int soil, moisture;
+    clrscr();
+    printf("Enter soil quality (0-100) and moisture (%): ");
+    scanf("%d%d",&soil,&moisture);
+    if(soil<40 && moisture<30)
+        printf("Fertilize & Water");
+    else if(soil<40)
+        printf("Fertilize only");
+    else if(moisture<30)
+        printf("Water only");
+    else
+        printf("Soil OK");
+    getch();
+}
