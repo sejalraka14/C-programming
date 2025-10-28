@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+    int a, b, diff;
+    clrscr();
+    printf("Enter two integers: ");
+    scanf("%d%d", &a, &b);
+    diff = abs(a - b);
+    printf("Absolute Difference = %d", diff);
+    getch();
+}
