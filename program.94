@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float initial, final, growth;
+    clrscr();
+    printf("Enter initial value: ");
+    scanf("%f", &initial);
+    printf("Enter final value: ");
+    scanf("%f", &final);
+    if(initial != 0)
+    {
+        growth = ((final - initial) / initial) * 100;
+        printf("Growth rate = %.2f%%", growth);
+    }
+    else
+        printf("Initial value cannot be zero!");
+    getch();
+}
