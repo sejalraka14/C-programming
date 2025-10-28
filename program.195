@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    FILE *fp = fopen("readings.txt","r");
+    if(fp == NULL){ printf("File not found!"); return 0; }
+    int val,sum=0,count=0;
+    while(fscanf(fp,"%d",&val)!=EOF){ sum+=val; count++; }
+    fclose(fp);
+    printf("Average from file = %.2f", (float)sum/count);
+    return 0;
+}
