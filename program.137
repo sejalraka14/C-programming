@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int temp;
+    clrscr();
+    printf("Enter temperature (°C): ");
+    scanf("%d",&temp);
+    if(temp < 10)
+        printf("Temperature too low! Heater ON");
+    else
+        printf("Temperature normal");
+    getch();
+}
