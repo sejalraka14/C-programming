@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b;
+    float div;
+    int *p1, *p2;
+    clrscr();
+    printf("Enter two integers: ");
+    scanf("%d%d", &a, &b);
+    p1 = &a;
+    p2 = &b;
+    if(*p2 != 0)
+    {
+        div = (float)(*p1) / (*p2);
+        printf("Division = %.2f", div);
+    }
+    else
+        printf("Division by zero not allowed!");
+    getch();
+}
