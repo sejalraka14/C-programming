@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int rain, level;
+    clrscr();
+    printf("Enter rain detected (0=no,1=yes) and tank level (%): ");
+    scanf("%d%d",&rain,&level);
+    if(rain==1 || level>80)
+        printf("Pump OFF");
+    else if(level<20)
+        printf("Pump ON");
+    else
+        printf("Pump Standby");
+    getch();
+}
