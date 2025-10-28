@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[100], n, i, evenCount=0;
+    float percent;
+    clrscr();
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+    printf("Enter %d elements:\n", n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d", &a[i]);
+        if(a[i] % 2 == 0)
+            evenCount++;
+    }
+    if(n != 0)
+    {
+        percent = ((float)evenCount / n) * 100;
+        printf("Percentage of even numbers = %.2f%%", percent);
+    }
+    else
+        printf("No elements in array!");
+    getch();
+}
