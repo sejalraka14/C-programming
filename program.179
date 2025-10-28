@@ -1,0 +1,14 @@
+#include <stdio.h>
+float average(int arr[], int n) {
+    int total = 0;
+    for(int i = 0; i < n; i++)
+        total += arr[i];
+    return (float)total / n;
+}
+int main() {
+    int temp[5];
+    printf("Enter 5 temperature readings: ");
+    for(int i = 0; i < 5; i++) scanf("%d", &temp[i]);
+    printf("Average Temperature = %.3f °C", average(temp, 5));
+    return 0;
+}
