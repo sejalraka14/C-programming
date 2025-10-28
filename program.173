@@ -1,0 +1,17 @@
+#include <stdio.h>
+float average(int arr[], int n) {
+    float total = 0;
+    for(int i = 0; i < n; i++)
+        total += arr[i];
+    return total / n;
+}
+int main() {
+    int n;
+    printf("Enter number of readings: ");
+    scanf("%d", &n);
+    int s[n];
+    for(int i = 0; i < n; i++)
+        scanf("%d", &s[i]);
+    printf("Average Sensor Value = %.2f", average(s, n));
+    return 0;
+}
