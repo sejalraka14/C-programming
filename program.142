@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int light;
+    clrscr();
+    printf("Enter light intensity (0-100): ");
+    scanf("%d",&light);
+    if(light < 20)
+        printf("Dark");
+    else if(light <= 60)
+        printf("Dim");
+    else
+        printf("Bright");
+    getch();
+}
