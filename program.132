@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int h,m,s,totalSec;
+    clrscr();
+    printf("Enter hours, minutes, seconds: ");
+    scanf("%d%d%d",&h,&m,&s);
+    totalSec=h*3600+m*60+s;
+    printf("Total seconds = %d",totalSec);
+    getch();
+}
