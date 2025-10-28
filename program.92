@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char str[100];
+    int i, len, vowelCount=0;
+    float percent;
+    clrscr();
+    printf("Enter a string: ");
+    gets(str);
+    len = strlen(str);
+    for(i=0; i<len; i++)
+    {
+        char ch = str[i];
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+           ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+            vowelCount++;
+    }
+    if(len != 0)
+    {
+        percent = ((float)vowelCount / len) * 100;
+        printf("Percentage of vowels = %.2f%%", percent);
+    }
+    else
+        printf("Empty string!");
+    getch();
+}
