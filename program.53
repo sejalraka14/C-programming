@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n, i;
+    long prod = 1;
+    clrscr();
+    printf("Enter n: ");
+    scanf("%d", &n);
+    for(i=2; i<=n; i+=2)
+        prod *= i;
+    printf("Product of even numbers = %ld", prod);
+    getch();
+}
