@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n, i, sum=0, count=0;
+    float avg;
+    clrscr();
+    printf("Enter n: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i+=2)
+    {
+        sum += i;
+        count++;
+    }
+    if(count != 0)
+    {
+        avg = (float)sum / count;
+        printf("Average of odd numbers = %.2f", avg);
+    }
+    else
+        printf("No odd numbers to average!");
+    getch();
+}
