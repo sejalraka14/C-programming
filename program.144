@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int smoke;
+    clrscr();
+    printf("Enter smoke level (0-100): ");
+    scanf("%d",&smoke);
+    if(smoke > 70)
+        printf("Fire Alert!");
+    else
+        printf("Air normal");
+    getch();
+}
