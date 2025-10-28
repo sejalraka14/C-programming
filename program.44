@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char c1, c2;
+    int diff;
+    clrscr();
+    printf("Enter two characters: ");
+    scanf("%c %c", &c1, &c2);
+    diff = c1 - c2;
+    printf("Difference of ASCII values = %d", diff);
+    getch();
+}
