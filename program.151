@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int door;
+    clrscr();
+    printf("Door status (1=open,0=closed): ");
+    scanf("%d",&door);
+    if(door==1)
+        printf("Door is OPEN");
+    else
+        printf("Door is CLOSED");
+    getch();
+}
