@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n, i, num;
+    long prod = 1;
+    clrscr();
+    printf("Enter how many numbers: ");
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+    {
+        printf("Enter number %d: ", i);
+        scanf("%d", &num);
+        prod *= num;
+    }
+    printf("Product = %ld", prod);
+    getch();
+}
