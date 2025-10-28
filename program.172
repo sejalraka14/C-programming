@@ -1,0 +1,15 @@
+#include <stdio.h>
+float average(int d[], int n) {
+    float sum = 0;
+    for(int i = 0; i < n; i++)
+        sum += d[i];
+    return sum / n;
+}
+int main() {
+    int distance[4];
+    printf("Enter 4 distance readings (cm): ");
+    for(int i = 0; i < 4; i++)
+        scanf("%d", &distance[i]);
+    printf("Average Distance = %.2f cm", average(distance, 4));
+    return 0;
+}
