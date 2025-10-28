@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int pressure;
+    clrscr();
+    printf("Enter pressure (PSI): ");
+    scanf("%d",&pressure);
+    if(pressure > 100)
+        printf("High pressure! Alert!");
+    else
+        printf("Pressure normal");
+    getch();
+}
