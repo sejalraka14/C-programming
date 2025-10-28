@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float rupees,dollars,paise;
+    clrscr();
+    printf("Enter amount in Rupees: ");
+    scanf("%f",&rupees);
+    paise=rupees*100;
+    dollars=rupees/82.0;
+    printf("Paise = %.2f, Dollars = %.2f",paise,dollars);
+    getch();
+}
