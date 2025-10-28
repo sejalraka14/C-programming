@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int marks[4], total=0, i;
+    float avg, percent;
+    clrscr();
+    printf("Enter marks of 4 subjects:\n");
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&marks[i]);
+        total+=marks[i];
+    }
+    avg=total/4.0;
+    percent=(total/400.0)*100;
+    printf("Average = %.2f, Percentage = %.2f%%",avg,percent);
+    getch();
+}
