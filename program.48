@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b, c, prod;
+    clrscr();
+    printf("Enter three integers: ");
+    scanf("%d%d%d", &a, &b, &c);
+    prod = a * b * c;
+    printf("Product = %d", prod);
+    getch();
+}
