@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int moisture, temp;
+    clrscr();
+    printf("Enter soil moisture (%) and temperature (°C): ");
+    scanf("%d%d",&moisture,&temp);
+    if(moisture<30 && temp>30)
+        printf("Water & Shade Required");
+    else if(moisture<30)
+        printf("Water Required");
+    else if(temp>30)
+        printf("Provide Shade");
+    else
+        printf("Soil OK");
+    getch();
+}
