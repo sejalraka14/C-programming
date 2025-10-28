@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char c;
+    int n;
+    float div;
+    clrscr();
+    printf("Enter a character: ");
+    scanf("%c", &c);
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    if(n != 0)
+    {
+        div = (float)c / n;
+        printf("Division of ASCII value = %.2f", div);
+    }
+    else
+        printf("Division by zero not allowed!");
+    getch();
+}
