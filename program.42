@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b, diff;
+    int *p1, *p2;
+    clrscr();
+    printf("Enter two integers: ");
+    scanf("%d%d", &a, &b);
+    p1 = &a;
+    p2 = &b;
+    diff = *p1 - *p2;
+    printf("Difference = %d", diff);
+    getch();
+}
