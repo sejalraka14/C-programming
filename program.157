@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int light, motion;
+    clrscr();
+    printf("Enter light intensity (0-100) and motion detected (1=yes,0=no): ");
+    scanf("%d%d",&light,&motion);
+    if(light<40 && motion==1)
+        printf("Light ON");
+    else
+        printf("Light OFF");
+    getch();
+}
