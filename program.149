@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int level;
+    clrscr();
+    printf("Enter water level (%): ");
+    scanf("%d",&level);
+    if(level<20)
+        printf("Pump ON");
+    else if(level>80)
+        printf("Pump OFF");
+    else
+        printf("Water level OK");
+    getch();
+}
