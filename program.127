@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int sec;
+    float min,hr;
+    clrscr();
+    printf("Enter seconds: ");
+    scanf("%d",&sec);
+    min=sec/60.0;
+    hr=sec/3600.0;
+    printf("Minutes = %.2f, Hours = %.2f",min,hr);
+    getch();
+}
