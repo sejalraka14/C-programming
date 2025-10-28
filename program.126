@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float km,miles,meters;
+    clrscr();
+    printf("Enter distance in kilometers: ");
+    scanf("%f",&km);
+    miles=km*0.621371;
+    meters=km*1000;
+    printf("Miles = %.2f, Meters = %.2f",miles,meters);
+    getch();
+}
