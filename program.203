@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    char *names[3] = {"Temperature","Pressure","Light"};
+    int val[3];
+    printf("Enter readings for:\n");
+    for(int i=0;i<3;i++){
+        printf("%s: ", names[i]);
+        scanf("%d",&val[i]);
+    }
+    float avg = (val[0]+val[1]+val[2])/3.0;
+    printf("Average Reading = %.2f", avg);
+    return 0;
+}
