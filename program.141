@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int temp;
+    clrscr();
+    printf("Enter temperature (°C): ");
+    scanf("%d",&temp);
+    if(temp < 10)
+        printf("Heater ON");
+    else if(temp > 35)
+        printf("Fan ON");
+    else
+        printf("Temperature OK");
+    getch();
+}
