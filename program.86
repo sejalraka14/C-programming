@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int marksObtained, totalMarks;
+    float percentage;
+    clrscr();
+    printf("Enter marks obtained: ");
+    scanf("%d", &marksObtained);
+    printf("Enter total marks: ");
+    scanf("%d", &totalMarks);
+    if(totalMarks != 0)
+    {
+        percentage = (float)marksObtained / totalMarks * 100;
+        printf("Percentage = %.2f%%", percentage);
+    }
+    else
+        printf("Total marks cannot be zero!");
+    getch();
+}
