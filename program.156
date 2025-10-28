@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int temp, humidity;
+    clrscr();
+    printf("Enter temperature (°C) and humidity (%): ");
+    scanf("%d%d",&temp,&humidity);
+    if(temp>30 && humidity>60)
+        printf("AC ON");
+    else if(temp>30)
+        printf("Fan ON");
+    else
+        printf("AC & Fan OFF");
+    getch();
+}
