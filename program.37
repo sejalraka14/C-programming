@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a, b, c, diff;
+    clrscr();
+    printf("Enter three integers: ");
+    scanf("%d%d%d", &a, &b, &c);
+    diff = a - b - c;
+    printf("Difference = %d", diff);
+    getch();
+}
