@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float oldSalary, newSalary, percentIncrease;
+    clrscr();
+    printf("Enter old salary: ");
+    scanf("%f", &oldSalary);
+    printf("Enter new salary: ");
+    scanf("%f", &newSalary);
+    if(oldSalary != 0)
+    {
+        percentIncrease = ((newSalary - oldSalary) / oldSalary) * 100;
+        printf("Percentage increase = %.2f%%", percentIncrease);
+    }
+    else
+        printf("Old salary cannot be zero!");
+    getch();
+}
