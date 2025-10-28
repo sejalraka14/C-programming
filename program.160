@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int smoke, gas;
+    clrscr();
+    printf("Enter smoke (0-100) and gas level (0-100): ");
+    scanf("%d%d",&smoke,&gas);
+    if(smoke>50 || gas>50)
+        printf("Danger! Evacuate");
+    else if(smoke>30 || gas>30)
+        printf("Warning! Ventilate Area");
+    else
+        printf("Safe");
+    getch();
+}
