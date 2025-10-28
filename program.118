@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int marks[3], total=0, i;
+    float percent;
+    clrscr();
+    printf("Enter marks of 3 subjects:\n");
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&marks[i]);
+        total += marks[i];
+    }
+    percent = (total/300.0)*100;
+    printf("Total = %d, Percentage = %.2f%%", total, percent);
+    getch();
+}
