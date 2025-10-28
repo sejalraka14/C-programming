@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float m, cm;
+    clrscr();
+    printf("Enter distance in meters: ");
+    scanf("%f", &m);
+    cm = m * 100;
+    printf("Distance in centimeters = %.2f", cm);
+    getch();
+}
