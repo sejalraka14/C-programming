@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n, diff=0, digit;
+    clrscr();
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    while(n > 0)
+    {
+        digit = n % 10;
+        diff -= digit;  // subtract each digit from diff
+        n = n / 10;
+    }
+    printf("Subtracted value of digits = %d", diff);
+    getch();
+}
