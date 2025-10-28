@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float costPrice, sellingPrice, percent;
+    clrscr();
+    printf("Enter cost price: ");
+    scanf("%f", &costPrice);
+    printf("Enter selling price: ");
+    scanf("%f", &sellingPrice);
+    if(costPrice != 0)
+    {
+        percent = ((sellingPrice - costPrice) / costPrice) * 100;
+        if(percent > 0)
+            printf("Profit Percentage = %.2f%%", percent);
+        else
+            printf("Loss Percentage = %.2f%%", -percent);
+    }
+    else
+        printf("Cost price cannot be zero!");
+    getch();
+}
