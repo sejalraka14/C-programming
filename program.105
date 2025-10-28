@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float cm, inch;
+    clrscr();
+    printf("Enter length in centimeters: ");
+    scanf("%f", &cm);
+    inch = cm / 2.54;
+    printf("Length in inches = %.2f", inch);
+    getch();
+}
