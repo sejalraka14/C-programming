@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int weeks;
+    int days;
+    clrscr();
+    printf("Enter weeks: ");
+    scanf("%d", &weeks);
+    days = weeks * 7;
+    printf("Time in days = %d", days);
+    getch();
+}
