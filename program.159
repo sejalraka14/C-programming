@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int temp;
+    clrscr();
+    printf("Enter temperature (°C): ");
+    scanf("%d",&temp);
+    if(temp<0)
+        printf("Freezing Warning!");
+    else if(temp<=25)
+        printf("Normal");
+    else if(temp<=35)
+        printf("Warm");
+    else
+        printf("Hot Alert!");
+    getch();
+}
