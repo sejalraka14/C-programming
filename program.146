@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int rain;
+    clrscr();
+    printf("Enter rain sensor value (0=no rain,1=rain): ");
+    scanf("%d",&rain);
+    if(rain==0)
+        printf("Open roof");
+    else
+        printf("Keep roof closed");
+    getch();
+}
