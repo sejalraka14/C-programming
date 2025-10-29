@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main() {
+    char cmd[15];
+    clrscr();
+    printf("Enter Command (LIGHT ON / LIGHT OFF): ");
+    gets(cmd);
+    if(strcmpi(cmd,"light on")==0)
+        printf("Turning Lights ON...");
+    else if(strcmpi(cmd,"light off")==0)
+        printf("Turning Lights OFF...");
+    else
+        printf("Invalid Light Command!");
+    getch();
+}
