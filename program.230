@@ -1,0 +1,18 @@
+#include <stdio.h>
+float avg(int a[], int n){
+    int sum=0;
+    for(int i=0;i<n;i++) sum+=a[i];
+    return (float)sum/n;
+}
+int main(){
+    int s[6], max, min;
+    printf("Enter 6 readings: ");
+    for(int i=0;i<6;i++){
+        scanf("%d",&s[i]);
+        if(i==0){ max=min=s[i]; }
+        if(s[i]>max) max=s[i];
+        if(s[i]<min) min=s[i];
+    }
+    printf("Average = %.2f\nHighest = %d\nLowest = %d", avg(s,6), max, min);
+    return 0;
+}
