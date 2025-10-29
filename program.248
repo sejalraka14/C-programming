@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int e;
+    clrscr();
+    printf("1.Low\n2.Medium\n3.High\nEnter Energy Level: ");
+    scanf("%d",&e);
+    switch(e){
+        case 1: printf("Energy Level: LOW"); break;
+        case 2: printf("Energy Level: MEDIUM"); break;
+        case 3: printf("Energy Level: HIGH"); break;
+        default: printf("Invalid Energy Level!");
+    }
+    getch();
+}
