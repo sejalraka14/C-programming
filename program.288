@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int msg;
+    clrscr();
+    printf("1.System Boot\n2.Calibration\n3.Shutdown\nEnter: ");
+    scanf("%d",&msg);
+    switch(msg){
+        case 1: printf("System Boot Successful."); break;
+        case 2: printf("Calibration Completed."); break;
+        case 3: printf("System Shutdown Safely."); break;
+        default: printf("Invalid Operation!");
+    }
+    getch();
+}
