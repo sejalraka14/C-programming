@@ -1,0 +1,16 @@
+#include <stdio.h>
+float average(int a[],int n){
+    int s=0;
+    for(int i=0;i<n;i++) s+=a[i];
+    return (float)s/n;
+}
+int main(){
+    int r[5], c=0;
+    printf("Enter 5 readings: ");
+    for(int i=0;i<5;i++) scanf("%d",&r[i]);
+    float m = average(r,5);
+    for(int i=0;i<5;i++)
+        if(r[i]>m) c++;
+    printf("Average = %.2f\nReadings above average = %d", m, c);
+    return 0;
+}
