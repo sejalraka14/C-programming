@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    FILE *f = fopen("sensor.txt","a+");
+    int val,sum=0,c=0;
+    printf("Enter readings (-1 to end): ");
+    while(1){
+        scanf("%d",&val);
+        if(val==-1) break;
+        fprintf(f,"%d ",val);
+        sum+=val; c++;
+    }
+    fclose(f);
+    printf("Average = %.2f", c?(float)sum/c:0);
+    return 0;
+}
