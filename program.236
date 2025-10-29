@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int s;
+    clrscr();
+    printf("1.Temperature\n2.Distance\n3.Light\nEnter sensor: ");
+    scanf("%d", &s);
+    switch(s) {
+        case 1: printf("Temperature sensor ON"); break;
+        case 2: printf("Distance sensor ON"); break;
+        case 3: printf("Light sensor ON"); break;
+        default: printf("Invalid sensor!");
+    }
+    getch();
+}
