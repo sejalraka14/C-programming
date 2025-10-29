@@ -1,0 +1,15 @@
+#include <stdio.h>
+float avgValid(int a[], int n){
+    int sum=0, c=0;
+    for(int i=0;i<n;i++){
+        if(a[i]<=1000){ sum+=a[i]; c++; }
+    }
+    return c?(float)sum/c:0;
+}
+int main(){
+    int s[6];
+    printf("Enter 6 readings: ");
+    for(int i=0;i<6;i++) scanf("%d",&s[i]);
+    printf("Valid Average (≤1000) = %.2f", avgValid(s,6));
+    return 0;
+}
