@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int obs;
+    clrscr();
+    printf("1.Stop\n2.Turn Left\n3.Turn Right\nEnter Response: ");
+    scanf("%d", &obs);
+    switch(obs){
+        case 1: printf("Robot Stopped."); break;
+        case 2: printf("Turning Left to Avoid Obstacle."); break;
+        case 3: printf("Turning Right to Avoid Obstacle."); break;
+        default: printf("Invalid Response!");
+    }
+    getch();
+}
