@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode, pass;
+    clrscr();
+    printf("Enter password (1234): ");
+    scanf("%d", &pass);
+    if(pass == 1234){
+        printf("\n1.Idle\n2.Active\nEnter Mode: ");
+        scanf("%d", &mode);
+        switch(mode){
+            case 1: printf("Robot is idle."); break;
+            case 2: printf("Robot active."); break;
+            default: printf("Invalid mode!");
+        }
+    } else {
+        printf("Wrong password!");
+    }
+    getch();
+}
