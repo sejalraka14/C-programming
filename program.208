@@ -1,0 +1,13 @@
+#include <stdio.h>
+int sum = 0;
+float avg(int a[], int n){
+    for(int i=0;i<n;i++) sum+=a[i];
+    return (float)sum/n;
+}
+int main(){
+    int x[4];
+    printf("Enter 4 readings: ");
+    for(int i=0;i<4;i++) scanf("%d",&x[i]);
+    printf("Average = %.2f", avg(x,4));
+    return 0;
+}
