@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int m;
+    clrscr();
+    printf("1.Auto Clean\n2.Spot Clean\n3.Manual Control\nEnter Mode: ");
+    scanf("%d",&m);
+    switch(m){
+        case 1: printf("Auto Cleaning Activated."); break;
+        case 2: printf("Spot Cleaning Activated."); break;
+        case 3: printf("Manual Control Enabled."); break;
+        default: printf("Invalid Cleaning Mode!");
+    }
+    getch();
+}
