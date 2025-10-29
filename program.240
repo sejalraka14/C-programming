@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("Select Robot Mode:\n1.Idle\n2.Active\n3.Low Battery\n4.Error\nEnter: ");
+    scanf("%d", &mode);
+    switch(mode) {
+        case 1: printf("Robot is waiting for instructions."); break;
+        case 2: printf("Robot executing assigned tasks."); break;
+        case 3: printf("Battery low! Please charge."); break;
+        case 4: printf("Error detected! Restart required."); break;
+        default: printf("Invalid Mode Selected!");
+    }
+    getch();
+}
