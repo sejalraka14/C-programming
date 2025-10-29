@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode, act;
+    clrscr();
+    printf("1.Idle\n2.Active\nEnter Robot Mode: ");
+    scanf("%d",&mode);
+    switch(mode){
+        case 1: printf("Robot Idle."); break;
+        case 2:
+            printf("\nSelect Action:\n1.Pick\n2.Place\n");
+            scanf("%d",&act);
+            switch(act){
+                case
