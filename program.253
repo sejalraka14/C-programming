@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int ch;
+    clrscr();
+    printf("1.Sound ON\n2.Light ON\n3.Both ON\nEnter: ");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1: printf("Robot Sound System Activated."); break;
+        case 2: printf("Light System Activated."); break;
+        case 3: printf("Sound and Light Both Activated."); break;
+        default: printf("Invalid Choice!");
+    }
+    getch();
+}
