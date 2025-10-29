@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int schedule;
+    clrscr();
+    printf("1.Daily\n2.Weekly\n3.Monthly\nEnter Schedule Type: ");
+    scanf("%d", &schedule);
+    switch(schedule){
+        case 1: printf("Performing Daily Checkup."); break;
+        case 2: printf("Performing Weekly Maintenance."); break;
+        case 3: printf("Performing Monthly Calibration."); break;
+        default: printf("Invalid Schedule Type!");
+    }
+    getch();
+}
