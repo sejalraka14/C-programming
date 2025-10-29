@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("1.Pick\n2.Place\n3.Stop\nEnter Arm Mode: ");
+    scanf("%d",&mode);
+    switch(mode) {
+        case 1: printf("Arm picking object..."); break;
+        case 2: printf("Arm placing object..."); break;
+        case 3: printf("Arm stopped."); break;
+        default: printf("Invalid Arm Mode!");
+    }
+    getch();
+}
