@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int ch;
+    clrscr();
+    do{
+        printf("\n1.Start\n2.Stop\n3.Exit\nEnter: ");
+        scanf("%d",&ch);
+        switch(ch){
+            case 1: printf("Robot started.\n"); break;
+            case 2: printf("Robot stopped.\n"); break;
+            case 3: printf("Exiting...\n"); break;
+            default: printf("Invalid, try again!\n");
+        }
+    }while(ch!=3);
+    getch();
+}
