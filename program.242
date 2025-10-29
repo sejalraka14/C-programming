@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode,battery;
+    clrscr();
+    printf("Select Mode: 1.Idle 2.Active\n");
+    scanf("%d",&mode);
+    switch(mode){
+        case 1: printf("Robot Idle.\n"); break;
+        case 2:
+            printf("Enter Battery Level (1=Low,2=OK): ");
+            scanf("%d",&battery);
+            switch(battery){
+                case 1: printf("Low Battery! Stop tasks."); break;
+                case 2: printf("Battery OK, performing tasks."); break;
+                default: printf("Invalid battery status!");
+            }
+            break;
+        default: printf("Invalid mode!");
+    }
+    getch();
+}
