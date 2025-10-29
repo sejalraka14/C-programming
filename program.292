@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main(){
+    char cmd[20];
+    clrscr();
+    printf("Enter Command (START/STOP/RESET): ");
+    gets(cmd);
+    if(strcmp(cmd,"START")==0)
+        printf("System Starting...");
+    else if(strcmp(cmd,"STOP")==0)
+        printf("System Stopped.");
+    else if(strcmp(cmd,"RESET")==0)
+        printf("System Restarting...");
+    else
+        printf("Unknown Command!");
+    getch();
+}
