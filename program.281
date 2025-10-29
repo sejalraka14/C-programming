@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int signal;
+    clrscr();
+    printf("1.Green - Go\n2.Yellow - Wait\n3.Red - Stop\nEnter Signal: ");
+    scanf("%d", &signal);
+    switch(signal){
+        case 1: printf("Proceed Ahead!"); break;
+        case 2: printf("Prepare to Stop."); break;
+        case 3: printf("Robot Stopped."); break;
+        default: printf("Invalid Signal!");
+    }
+    getch();
+}
