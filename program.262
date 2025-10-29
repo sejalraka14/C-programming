@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int t;
+    clrscr();
+    printf("Maintenance Type:\n1.Software\n2.Hardware\n3.Sensor\nEnter: ");
+    scanf("%d",&t);
+    switch(t){
+        case 1: printf("Running software diagnostics."); break;
+        case 2: printf("Checking mechanical parts."); break;
+        case 3: printf("Calibrating sensors."); break;
+        default: printf("Unknown maintenance type!");
+    }
+    getch();
+}
