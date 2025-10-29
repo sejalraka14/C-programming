@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int ch;
+    clrscr();
+    do {
+        printf("\n1.Idle 2.Active 3.Error 4.Exit\nEnter: ");
+        scanf("%d", &ch);
+        switch(ch) {
+            case 1: printf("Idle...\n"); break;
+            case 2: printf("Active...\n"); break;
+            case 3: printf("Error!\n"); break;
+            case 4: printf("Exiting...\n"); break;
+            default: printf("Invalid!\n");
+        }
+    } while(ch != 4);
+    getch();
+}
