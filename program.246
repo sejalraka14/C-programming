@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int arm;
+    clrscr();
+    printf("1.Extend\n2.Retract\n3.Stop\nEnter: ");
+    scanf("%d",&arm);
+    switch(arm){
+        case 1: printf("Arm Extending."); break;
+        case 2: printf("Arm Retracting."); break;
+        case 3: printf("Arm Stopped."); break;
+        default: printf("Invalid Option!");
+    }
+    getch();
+}
