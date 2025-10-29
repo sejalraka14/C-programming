@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("1.Front Camera\n2.Rear Camera\n3.Camera OFF\nEnter: ");
+    scanf("%d", &mode);
+    switch(mode){
+        case 1: printf("Front camera activated."); break;
+        case 2: printf("Rear camera activated."); break;
+        case 3: printf("All cameras turned off."); break;
+        default: printf("Invalid camera mode!");
+    }
+    getch();
+}
