@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int task;
+    clrscr();
+    printf("1.Cleaning\n2.Sorting\n3.Transporting\nEnter task: ");
+    scanf("%d",&task);
+    switch(task){
+        case 1: printf("Cleaning initiated."); break;
+        case 2: printf("Sorting objects."); break;
+        case 3: printf("Transporting load."); break;
+        default: printf("Invalid task!");
+    }
+    getch();
+}
