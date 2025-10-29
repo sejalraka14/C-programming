@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    int n,m;
+    printf("Enter number of sensors: ");
+    scanf("%d",&n);
+    printf("Enter number of readings per sensor: ");
+    scanf("%d",&m);
+    float total=0;
+    for(int i=1;i<=n;i++){
+        int sum=0;
+        printf("\nSensor %d readings: ", i);
+        for(int j=0;j<m;j++){
+            int val; scanf("%d",&val); sum+=val;
+        }
+        printf("Avg for Sensor %d = %.2f\n", i, (float)sum/m);
+        total += (float)sum/m;
+    }
+    printf("\nOverall Average = %.2f", total/n);
+    return 0;
+}
