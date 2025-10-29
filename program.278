@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main() {
+    int m;
+    clrscr();
+    printf("1.Scan\n2.Operate\n3.Sleep\nEnter: ");
+    scanf("%d",&m);
+    printf("Switching mode...\n");
+    delay(1000);
+    switch(m){
+        case 1: printf("Scan Mode Enabled."); break;
+        case 2: printf("Operation Mode Running."); break;
+        case 3: printf("Sleep Mode Activated."); break;
+        default: printf("Invalid Option!");
+    }
+    getch();
+}
