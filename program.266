@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int level;
+    clrscr();
+    printf("Enter battery percentage: ");
+    scanf("%d",&level);
+    switch(level/25){
+        case 0: printf("Battery Critical!"); break;
+        case 1: printf("Battery Low."); break;
+        case 2: printf("Battery Medium."); break;
+        case 3:
+        case 4: printf("Battery Full."); break;
+        default: printf("Invalid input!");
+    }
+    getch();
+}
