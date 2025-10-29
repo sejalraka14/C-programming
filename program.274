@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int sys;
+    clrscr();
+    printf("1.Sensor Check\n2.Motor Check\n3.Comm Check\nEnter: ");
+    scanf("%d",&sys);
+    switch(sys){
+        case 1: printf("Running Sensor Diagnostic..."); break;
+        case 2: printf("Testing Motor Control..."); break;
+        case 3: printf("Checking Communication Links..."); break;
+        default: printf("Invalid System!");
+    }
+    getch();
+}
