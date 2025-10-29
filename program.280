@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int choice;
+    clrscr();
+    printf("1.Power On\n2.Power Off\n3.Reset\n4.Diagnostics\nEnter: ");
+    scanf("%d",&choice);
+    switch(choice){
+        case 1: printf("Powering On Robot..."); break;
+        case 2: printf("Shutting Down Robot..."); break;
+        case 3: printf("System Reset in Progress..."); break;
+        case 4: printf("Running Diagnostics..."); break;
+        default: printf("Invalid Input!");
+    }
+    getch();
+}
