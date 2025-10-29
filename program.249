@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int s;
+    clrscr();
+    printf("1.Silent\n2.Beep\n3.Alarm\nEnter Sound Mode: ");
+    scanf("%d",&s);
+    switch(s){
+        case 1: printf("Robot is Silent."); break;
+        case 2: printf("Beep! Beep!"); break;
+        case 3: printf("ALARM ACTIVATED!"); break;
+        default: printf("Invalid Sound Mode!");
+    }
+    getch();
+}
