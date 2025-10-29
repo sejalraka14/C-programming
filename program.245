@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    char m;
+    clrscr();
+    printf("Enter mode (I-Idle, A-Active, E-Error): ");
+    scanf(" %c",&m);
+    switch(m){
+        case 'I': case 'i': printf("Idle mode."); break;
+        case 'A': case 'a': printf("Active mode."); break;
+        case 'E': case 'e': printf("Error mode!"); break;
+        default: printf("Invalid character!");
+    }
+    getch();
+}
