@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main(){
+    char cmd[20];
+    clrscr();
+    printf("Enter Command (AUTO/MANUAL): ");
+    gets(cmd);
+    if(strcmpi(cmd,"auto")==0)
+        printf("Automatic Mode Enabled.");
+    else if(strcmpi(cmd,"manual")==0)
+        printf("Manual Mode Enabled.");
+    else
+        printf("Invalid Mode!");
+    getch();
+}
