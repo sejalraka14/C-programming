@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int d;
+    clrscr();
+    printf("1.North\n2.South\n3.East\n4.West\nEnter direction: ");
+    scanf("%d",&d);
+    switch(d){
+        case 1: printf("Moving North."); break;
+        case 2: printf("Moving South."); break;
+        case 3: printf("Moving East."); break;
+        case 4: printf("Moving West."); break;
+        default: printf("Invalid Direction!");
+    }
+    getch();
+}
