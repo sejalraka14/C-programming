@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int com;
+    clrscr();
+    printf("1.WiFi\n2.Bluetooth\n3.Wired\nEnter communication mode: ");
+    scanf("%d",&com);
+    switch(com){
+        case 1: printf("WiFi communication active."); break;
+        case 2: printf("Bluetooth mode enabled."); break;
+        case 3: printf("Wired connection established."); break;
+        default: printf("Invalid Communication Type!");
+    }
+    getch();
+}
