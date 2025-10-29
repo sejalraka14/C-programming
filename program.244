@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int i, mode;
+    clrscr();
+    for(i=1;i<=3;i++){
+        printf("\nRobot %d:\n1.Idle\n2.Active\n3.Error\nEnter: ",i);
+        scanf("%d",&mode);
+        switch(mode){
+            case 1: printf("Robot %d Idle.\n",i); break;
+            case 2: printf("Robot %d Active.\n",i); break;
+            case 3: printf("Robot %d Error!\n",i); break;
+            default: printf("Invalid mode!\n");
+        }
+    }
+    getch();
+}
