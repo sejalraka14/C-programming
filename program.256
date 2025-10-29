@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int day;
+    clrscr();
+    printf("1.Monday\n2.Tuesday\n3.Wednesday\nEnter: ");
+    scanf("%d",&day);
+    switch(day){
+        case 1: printf("Routine Check Scheduled."); break;
+        case 2: printf("Testing Mode Active."); break;
+        case 3: printf("Maintenance in Progress."); break;
+        default: printf("No Operation Planned.");
+    }
+    getch();
+}
