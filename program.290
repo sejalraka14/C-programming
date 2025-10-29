@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int option;
+    clrscr();
+    printf("Robot Main Menu:\n");
+    printf("1.Start\n2.Stop\n3.Restart\n4.Diagnostic\n5.Shutdown\nEnter: ");
+    scanf("%d",&option);
+    switch(option){
+        case 1: printf("Robot Started Successfully."); break;
+        case 2: printf("Robot Stopped Safely."); break;
+        case 3: printf("Restarting Robot..."); break;
+        case 4: printf("Running Full Diagnostics..."); break;
+        case 5: printf("Shutting Down System..."); break;
+        default: printf("Invalid Option!");
+    }
+    getch();
+}
