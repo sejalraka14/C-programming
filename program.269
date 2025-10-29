@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int s;
+    clrscr();
+    printf("1.Safe\n2.Caution\n3.Danger\nEnter safety level: ");
+    scanf("%d",&s);
+    switch(s){
+        case 1: printf("System operating safely."); break;
+        case 2: printf("Caution! Minor issues detecte."); break;
+        case 3: printf("DANGER! Shutdown required."); break;
+        default: printf("Invalid safety level!");
+    }
+    getch();
+}
