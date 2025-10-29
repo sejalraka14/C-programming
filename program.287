@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int status;
+    clrscr();
+    printf("1.Charging\n2.Fully Charged\n3.Not Connected\nEnter Battery Status: ");
+    scanf("%d",&status);
+    switch(status){
+        case 1: printf("Battery Charging..."); break;
+        case 2: printf("Battery Fully Charged."); break;
+        case 3: printf("Charger Not Connected!"); break;
+        default: printf("Invalid Status!");
+    }
+    getch();
+}
