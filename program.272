@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int led;
+    clrscr();
+    printf("1.Red\n2.Green\n3.Blue\nEnter LED color: ");
+    scanf("%d",&led);
+    switch(led){
+        case 1: printf("Red LED ON - Warning Mode."); break;
+        case 2: printf("Green LED ON - Normal Mode."); break;
+        case 3: printf("Blue LED ON - Night Mode."); break;
+        default: printf("Invalid LED selection!");
+    }
+    getch();
+}
