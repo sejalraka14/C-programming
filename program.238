@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("1.Idle 2.Active 3.Error\nEnter: ");
+    scanf("%d", &mode);
+    printf("Processing...\n");
+    delay(1000);
+    switch(mode
