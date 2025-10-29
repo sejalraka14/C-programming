@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode, dir;
+    clrscr();
+    printf("1.Manual\n2.Automatic\nEnter control mode: ");
+    scanf("%d",&mode);
+    switch(mode){
+        case 1:
+            printf("\nEnter Direction: 1.Forward 2.Reverse: ");
+            scanf("%d",&dir);
+            switch(dir){
+                case 1: printf("Manual Forward."); break;
+                case 2: printf("Manual Reverse."); break;
+                default: printf("Invalid direction!");
+            }
+            break;
+        case 2: printf("Automatic Mode Enabled."); break;
+        default: printf("Invalid Mode!");
+    }
+    getch();
+}
