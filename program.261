@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int e;
+    clrscr();
+    printf("1.Normal Stop\n2.Emergency Stop\n3.Restart\nEnter: ");
+    scanf("%d",&e);
+    switch(e){
+        case 1: printf("Normal stop initiated."); break;
+        case 2: printf("Emergency stop! Power cut."); break;
+        case 3: printf("Restarting system..."); break;
+        default: printf("Invalid stop type!");
+    }
+    getch();
+}
