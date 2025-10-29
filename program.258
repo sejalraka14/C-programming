@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("1.Processing\n2.Scanning\n3.Sleep\nEnter: ");
+    scanf("%d",&mode);
+    printf("Loading...\n");
+    delay(1000);
+    switch(mode){
+        case 1: printf("Robot Processing Data."); break;
+        case 2: printf("Scanning Environment."); break;
+        case 3: printf("Robot Sleeping Mode."); break;
+        default: printf("Invalid Option!");
+    }
+    getch();
+}
