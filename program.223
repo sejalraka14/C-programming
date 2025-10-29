@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int exp, readings;
+    printf("Enter number of experiments: ");
+    scanf("%d",&exp);
+    printf("Enter readings per experiment: ");
+    scanf("%d",&readings);
+    for(int i=1;i<=exp;i++){
+        int sum=0;
+        printf("Experiment %d readings: ", i);
+        for(int j=0;j<readings;j++){
+            int val; scanf("%d",&val); sum+=val;
+        }
+        printf("Average of Experiment %d = %.2f\n", i, (float)sum/readings);
+    }
+    return 0;
+}
