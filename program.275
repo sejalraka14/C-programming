@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    char op;
+    clrscr();
+    printf("Enter operation (S-Start, T-Stop, R-Reset): ");
+    scanf(" %c",&op);
+    switch(op){
+        case 'S': case 's': printf("System Started."); break;
+        case 'T': case 't': printf("System Stopped."); break;
+        case 'R': case 'r': printf("System Reset."); break;
+        default: printf("Invalid Operation!");
+    }
+    getch();
+}
