@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int ch;
+    clrscr();
+    do{
+        printf("\n1.Slow\n2.Medium\n3.Fast\n4.Exit\nEnter: ");
+        scanf("%d",&ch);
+        switch(ch){
+            case 1: printf("Speed: Slow.\n"); break;
+            case 2: printf("Speed: Medium.\n"); break;
+            case 3: printf("Speed: Fast.\n"); break;
+            case 4: printf("Exiting speed control...\n"); break;
+            default: printf("Invalid!\n");
+        }
+    }while(ch!=4);
+    getch();
+}
