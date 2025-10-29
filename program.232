@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int m;
+    clrscr();
+    printf("1.Idle\n2.Active\n3.Error\n4.Maintenance\nEnter choice: ");
+    scanf("%d", &m);
+    switch(m) {
+        case 1: printf("Idle mode selected."); break;
+        case 2: printf("Active mode selected."); break;
+        case 3: printf("Error detected."); break;
+        case 4: printf("Maintenance mode running."); break;
+        default: printf("Invalid choice!");
+    }
+    getch();
+}
