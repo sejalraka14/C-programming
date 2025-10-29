@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int day[3][4];
+    printf("Enter 3 hours × 4 readings each:\n");
+    for(int i=0;i<3;i++)
+        for(int j=0;j<4;j++)
+            scanf("%d",&day[i][j]);
+    for(int i=0;i<3;i++){
+        int sum=0;
+        for(int j=0;j<4;j++) sum+=day[i][j];
+        printf("Hour %d average = %.2f\n", i+1, (float)sum/4);
+    }
+    return 0;
+}
