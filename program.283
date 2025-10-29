@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int mode;
+    clrscr();
+    printf("1.Power Saver\n2.Normal\n3.Performance\nEnter Power Mode: ");
+    scanf("%d", &mode);
+    switch(mode){
+        case 1: printf("Running in Power Saver Mode."); break;
+        case 2: printf("Running in Normal Mode."); break;
+        case 3: printf("Running in Performance Mode."); break;
+        default: printf("Invalid Power Mode!");
+    }
+    getch();
+}
