@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main(){
+    char cmd[20], pass[10];
+    clrscr();
+    printf("Enter Password: ");
+    gets(pass);
+    if(strcmp(pass,"1234")==0){
+        printf("Enter Command (START/STOP): ");
+        gets(cmd);
+        if(strcmpi(cmd,"start")==0)
+            printf("Robot Started.");
+        else if(strcmpi(cmd,"stop")==0)
+            printf("Robot Stopped.");
+        else
+            printf("Invalid Command!");
+    }
+    else
+        printf("Wrong Password!");
+    getch();
+}
