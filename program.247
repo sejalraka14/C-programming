@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int s;
+    clrscr();
+    printf("1.Initializing\n2.Running\n3.Completed\nEnter: ");
+    scanf("%d",&s);
+    switch(s){
+        case 1: printf("System initializing..."); break;
+        case 2: printf("System running."); break;
+        case 3: printf("Operation completed."); break;
+        default: printf("Invalid status!");
+    }
+    getch();
+}
