@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int comm;
+    clrscr();
+    printf("1.UART\n2.SPI\n3.I2C\nEnter Communication Protocol: ");
+    scanf("%d", &comm);
+    switch(comm){
+        case 1: printf("UART Communication Enabled."); break;
+        case 2: printf("SPI Communication Enabled."); break;
+        case 3: printf("I2C Communication Enabled."); break;
+        default: printf("Invalid Protocol!");
+    }
+    getch();
+}
