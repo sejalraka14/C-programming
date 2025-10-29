@@ -1,0 +1,15 @@
+#include <stdio.h>
+float avgLow(int a[], int n, int limit){
+    int sum=0, c=0;
+    for(int i=0;i<n;i++)
+        if(a[i]<limit){ sum+=a[i]; c++; }
+    return c? (float)sum/c : 0;
+}
+int main(){
+    int l[5], limit;
+    printf("Enter limit: "); scanf("%d",&limit);
+    printf("Enter 5 light readings: ");
+    for(int i=0;i<5;i++) scanf("%d",&l[i]);
+    printf("Average Below %d = %.2f", limit, avgLow(l,5,limit));
+    return 0;
+}
