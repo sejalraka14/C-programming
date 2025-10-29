@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int module;
+    clrscr();
+    printf("1.Arm Module\n2.Wheel Module\n3.Sensor Module\nEnter: ");
+    scanf("%d",&module);
+    switch(module){
+        case 1: printf("Arm Module Engaged."); break;
+        case 2: printf("Wheel Module Engaged."); break;
+        case 3: printf("Sensor Module Activated."); break;
+        default: printf("Invalid Module!");
+    }
+    getch();
+}
