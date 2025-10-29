@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int arm;
+    clrscr();
+    printf("1.Grab\n2.Release\n3.Rotate\n4.Stop\nEnter Arm Action: ");
+    scanf("%d", &arm);
+    switch(arm){
+        case 1: printf("Arm is Grabbing Object."); break;
+        case 2: printf("Arm Released Object."); break;
+        case 3: printf("Arm Rotating."); break;
+        case 4: printf("Arm Stopped."); break;
+        default: printf("Invalid Action!");
+    }
+    getch();
+}
