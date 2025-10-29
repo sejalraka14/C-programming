@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int tool;
+    clrscr();
+    printf("1.Gripper\n2.Cutter\n3.Welder\nEnter Tool: ");
+    scanf("%d",&tool);
+    switch(tool){
+        case 1: printf("Gripper tool activated."); break;
+        case 2: printf("Cutter tool activated."); break;
+        case 3: printf("Welder tool activated."); break;
+        default: printf("Invalid tool!");
+    }
+    getch();
+}
