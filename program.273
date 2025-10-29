@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int speed=0,ch;
+    clrscr();
+    do{
+        printf("\n1.Increase Speed\n2.Decrease Speed\n3.Show Speed\n4.Exit\nEnter: ");
+        scanf("%d",&ch);
+        switch(ch){
+            case 1: speed+=10; printf("Speed increased to %d%%.\n",speed); break;
+            case 2: speed-=10; printf("Speed decreased to %d%%.\n",speed); break;
+            case 3: printf("Current Speed = %d%%.\n",speed); break;
+            case 4: printf("Exiting...\n"); break;
+            default: printf("Invalid choice!\n");
+        }
+    }while(ch!=4);
+    getch();
+}
