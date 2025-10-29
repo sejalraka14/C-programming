@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int lock;
+    clrscr();
+    printf("1.Lock\n2.Unlock\n3.Check Status\nEnter: ");
+    scanf("%d",&lock);
+    switch(lock){
+        case 1: printf("Robot Locked."); break;
+        case 2: printf("Robot Unlocked."); break;
+        case 3: printf("Lock Status: Secure."); break;
+        default: printf("Invalid option!");
+    }
+    getch();
+}
