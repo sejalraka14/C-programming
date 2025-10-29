@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int env;
+    clrscr();
+    printf("1.Indoor\n2.Outdoor\n3.Water-Resistant\nEnter Mode: ");
+    scanf("%d",&env);
+    switch(env){
+        case 1: printf("Indoor Mode: sensors calibrated."); break;
+        case 2: printf("Outdoor Mode: high-brightness vision active."); break;
+        case 3: printf("Water-Resistant Mode enabled."); break;
+        default: printf("Invalid Environment Mode!");
+    }
+    getch();
+}
