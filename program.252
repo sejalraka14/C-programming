@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int temp;
+    clrscr();
+    printf("1.Normal\n2.Warning\n3.Critical\nEnter temperature status: ");
+    scanf("%d", &temp);
+    switch(temp){
+        case 1: printf("Temperature Normal."); break;
+        case 2: printf("Warning! Temperature rising."); break;
+        case 3: printf("Critical! System shutting down."); break;
+        default: printf("Invalid Option!");
+    }
+    getch();
+}
