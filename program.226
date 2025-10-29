@@ -1,0 +1,14 @@
+#include <stdio.h>
+void sumAvg(int a[], int n, int *sum, float *avg){
+    *sum=0;
+    for(int i=0;i<n;i++) *sum += a[i];
+    *avg = (float)(*sum)/n;
+}
+int main(){
+    int s[4], total; float mean;
+    printf("Enter 4 readings: ");
+    for(int i=0;i<4;i++) scanf("%d",&s[i]);
+    sumAvg(s,4,&total,&mean);
+    printf("Sum = %d, Average = %.2f", total, mean);
+    return 0;
+}
