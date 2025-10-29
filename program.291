@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main() {
+    char cmd[20];
+    clrscr();
+    printf("Enter Command (START/STOP): ");
+    gets(cmd);
+    if(strcmp(cmd,"START")==0)
+        printf("Robot Started.");
+    else if(strcmp(cmd,"STOP")==0)
+        printf("Robot Stopped.");
+    else
+        printf("Invalid Command!");
+    getch();
+}
