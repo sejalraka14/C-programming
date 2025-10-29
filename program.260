@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+void main() {
+    int cmd;
+    clrscr();
+    printf("Enter Command Number (10=Start,20=Stop,30=Error): ");
+    scanf("%d",&cmd);
+    switch(cmd){
+        case 10: printf("Command Received: START"); break;
+        case 20: printf("Command Received: STOP"); break;
+        case 30: printf("Error Command Triggered"); break;
+        default: printf("Unknown Command!");
+    }
+    getch();
+}
